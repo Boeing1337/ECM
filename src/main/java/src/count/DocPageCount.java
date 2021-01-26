@@ -1,15 +1,13 @@
-package src.counter;
+package src.count;
 
 import com.aspose.words.Document;
 import lombok.SneakyThrows;
-import src.counter.data.Extension;
+import src.count.data.Extension;
 
 import java.io.File;
 
-import static src.counter.data.Extension.DOCX;
-
-public class DocxPageCounter implements FilePageCounter {
-    private final static Extension EXTENSION = DOCX;
+public class DocPageCount implements FilePageCount {
+    private final static Extension EXTENSION = Extension.DOC;
 
     @Override
     @SneakyThrows

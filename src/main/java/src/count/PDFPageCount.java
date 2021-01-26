@@ -1,14 +1,12 @@
-package src.counter;
+package src.count;
 
 import org.apache.pdfbox.pdmodel.PDDocument;
-import src.counter.data.Extension;
+import src.count.data.Extension;
 
 import java.io.File;
 
-import static src.counter.data.Extension.PDF;
-
-public class PDFPageCounter implements FilePageCounter {
-    private final static Extension EXTENSION = PDF;
+public class PDFPageCount implements FilePageCount {
+    private final static Extension EXTENSION = Extension.PDF;
 
     @Override
     public int countPages(File file) {

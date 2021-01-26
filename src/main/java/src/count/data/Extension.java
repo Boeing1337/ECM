@@ -1,4 +1,4 @@
-package src.counter.data;
+package src.count.data;
 
 public enum Extension {
     DOC("doc"),
